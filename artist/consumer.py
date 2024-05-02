@@ -16,8 +16,8 @@ consumer = KafkaConsumer(
     bootstrap_servers='mutual-shrimp-13505-us1-kafka.upstash.io:9092',
     sasl_mechanism='SCRAM-SHA-256',
     security_protocol='SASL_SSL',
-    sasl_plain_username='bXV0dWFsLXNocmltcC0xMzUwNSTolZoSwUXeZqoOfvlp4xj3pjl4uRXoCbeBmXI',
-    sasl_plain_password='YmY4ZWZjZmItNmE2Yi00Y2ZhLWI1N2ItNTgxMjU2ZGM1NjRm',
+    sasl_plain_username='dW5pZmllZC1hbnQtMTA3MTYkItO4Rn2B-30afeSuzZ0XhMIBoBcGJflfedqUQsE',
+    sasl_plain_password='YjVhM2RmODAtNzY0YS00MmUxLWI2NjEtYjcxNTg5MDI3M2Ji',
     group_id='YOUR_CONSUMER_GROUP',
     auto_offset_reset='earliest'
 )
@@ -25,7 +25,7 @@ consumer = KafkaConsumer(
 s3_client = boto3.client('s3')
 
 # Specify the S3 bucket and object key
-bucket_name = 'de-project-kafka'
+bucket_name = 'project-kafka-spotify'
 
 DATA = []
 try:
